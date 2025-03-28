@@ -1,0 +1,11 @@
+###CR
+POST localhost:8080/api/v1/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiQGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0MTY2NjUyOCwiZXhwIjoxNzQxNzUyOTI4fQ.Y4Ve-_nGoLsWX8hrfduflWsbxh_GGThStnScjA6kZSQ
+
+{
+  "name": "qwe",
+  "email": "qwe",
+  "password": "qwe",
+  "role": "ADMIN"
+}

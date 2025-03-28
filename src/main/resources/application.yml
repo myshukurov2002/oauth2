@@ -1,0 +1,56 @@
+# Server port
+server:
+  port: 8080
+
+# PostgreSQL ma'lumotlar bazasi sozlamalari
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/kun_uz
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+
+  # Hibernate sozlamalari
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    generate-ddl: true
+
+  # Log darajasi
+  logging:
+    level:
+      org.springframework: ERROR
+
+  # Flyway migratsiyasi
+  flyway:
+    baseline-on-migrate: true
+    enabled: true
+
+  # Fayl yuklash limitlari
+  servlet:
+    multipart:
+      max-file-size: 1MB
+      max-request-size: 1MB
+
+  # Profil sozlamasi
+#  profiles:
+#    active: dev
+
+  # ? OAuth2 sozlamalari
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 432335580646-cegspfqa15opka5vbddmq0jcstn3pmci.apps.googleusercontent.com
+            client-secret: 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
+            redirect-uri: "http://localhost:8080/login/oauth2/code/google"
+            scope: profile, email
+            client-name: Google
+            authorization-grant-type: authorization_code
+
+# ? JWT sozlamalari
+jwt:
+  secret: MAZGI_KEY!827687QT3WGDHGSAJGFDSJFGUYEWTUYSGFHGFUY9873Q893QW

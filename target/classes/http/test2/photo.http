@@ -1,0 +1,12 @@
+###
+POST http://localhost:8080/api/v1/photo/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="8ymcelbzhjqa1.jpg"
+
+< C:\Users\Lenovo\Desktop\8ymcelbzhjqa1.jpg
+
+
+### Rasmni olish (GET)
+GET http://localhost:8080/api/v1/photo?id=2e5fa7e5-970f-42f8-a079-594cd439d580

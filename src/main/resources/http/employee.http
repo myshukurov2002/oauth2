@@ -1,0 +1,11 @@
+###
+POST localhost:8080/api/employees/create
+Content-Type: application/json
+
+{
+  "position": "Java",
+  "name": "Guli",
+  "active": true,
+  "salary": 2000,
+  "experience": 4
+}

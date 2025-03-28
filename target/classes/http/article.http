@@ -1,0 +1,26 @@
+###profile crud
+
+photo_id
+
+
+###
+POST localhost:8080/api/v1/article
+Content-Type: application/json
+
+{
+  "categoryId": "238534523-434532-434-4-3",
+  "photoId": "540c4049-c901-4e4d-bad2-a64689027105",
+  "title": "asdsfsd",
+  "bodtt": "sdhfsd",
+  "tags": [
+    "#new",
+    "#global",
+    "#siyosat",
+    "#siyosat"
+  ]
+}
+###profile delete by id
+
+
+###profile get by id
+POST http://localhost:8081/api/v1/auth/view/e25e2f9e-59a6-457f-86b6-98709fb57471/e593d803-24b7-477d-a850-8756a8d33086

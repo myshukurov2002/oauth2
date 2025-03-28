@@ -1,0 +1,9 @@
+/open/get-info-min-by-id/{id}
+/open/get-photo-min-by-id/{id}
+/open/get-birth-date-min-by-id/{id}
+
+
+/admin/get-all
+/admin/get-by-id/{id}
+
+/moderator/block-by-id/{id}

@@ -1,0 +1,12 @@
+###
+POST http://localhost:8080/api/v1/photo/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="moon-sighting.jpg"
+
+< C:\Users\Lenovo\Documents\moon-sighting.jpg
+
+
+### Rasmni olish (GET)
+GET http://localhost:8080/api/v1/photo/540c4049-c901-4e4d-bad2-a64689027105

@@ -1,0 +1,36 @@
+### REgister
+POST localhost:8080/api/v1/auth/default
+
+
+###
+POST localhost:8080/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "fullName": "b",
+  "role": "ADMIN",
+  "email": "b@gmail.com",
+  "password": "b"
+}
+
+###
+POST localhost:8080/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "b@gmail.com",
+  "password": "b"
+}
+
+###
+GET https://52aa-193-104-179-125.ngrok-free.app/api/v1/auth/get-all?page=2&size=5
+ngrok-skip-browser-warning: false
+
+###
+GET localhost:8080/api/v1/auth/get-all-by/false?page=0&size=5
+
+###
+GET  https://a7a0-195-158-9-110.ngrok-free.app/hello
+
+###
+{"web":{"client_id":"432335580646-cegspfqa15opka5vbddmq0jcstn3pmci.apps.googleusercontent.com","project_id":"regional-taxi-432915","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_secret":"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","redirect_uris":["http://localhost:8080/login/oauth2/code/google"],"javascript_origins":["http://localhost:8080"]}}
